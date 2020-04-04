@@ -1,0 +1,74 @@
+{
+    "extends": [
+        "airbnb"
+    ],
+    "parser": "babel-eslint",
+    "globals": {
+        "document": true,
+        "window": true,
+        "describe": true,
+        "it": true,
+        "expect": true,
+        "localStorage": true,
+        "fetch": true,
+        "Image": true
+    },
+    "rules": {
+        "comma-dangle": "off",
+        "no-plusplus": "off",
+        "linebreak-style": "off",
+        "no-underscore-dangle": "off",
+        "class-methods-use-this": "off",
+        "react/prop-types": "off",
+        "react/jsx-filename-extension": "off",
+        "import/prefer-default-export": "off",
+        "jsx-a11y/media-has-caption": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 120
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": true
+            }
+        ],
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "object-curly-newline": "off",
+        "react/no-did-mount-set-state": "off",
+        "jsx-a11y/label-has-for": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/destructuring-assignment": "off",
+        "no-console": [	
+            "error",	
+            {	
+                "allow": [	
+                    "warn",	
+                    "error"	
+                ]	
+            }	
+        ]
+    }
+}

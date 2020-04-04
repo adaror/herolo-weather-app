@@ -1,0 +1,29 @@
+//load component styles
+@import './components/header/header.style.scss';
+@import './components/favorites/favorites.style.scss';
+//load global fonts from google fonts
+@import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+
+html {
+    margin: 0;
+  
+    body {
+      background: #fdfdfd;
+      margin: 0;
+  
+      #root {
+        overflow: hidden;
+  
+        .content {
+          padding-top: 70px;
+          padding-left: 18px;
+          height: 100vh;
+          width: 100%;
+          overflow-x: auto;
+        }
+      }
+    }
+  }
+
+
+  
