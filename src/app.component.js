@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/scss/main.scss';
 import './app.style.scss';
 import {
-  Switch, Route, withRouter, Redirect
+  Switch, Route, withRouter
 } from 'react-router-dom';
 import WeatherSearch from './components/weather-search/weather.component';
 import Favorites from './components/favorites/favorites.component';
@@ -23,7 +23,6 @@ class App extends React.Component {
           <Switch>
             <Route path="/herolo-weather-app" exact component={WeatherSearch} />
             <Route path="/favorites" exact component={Favorites} />
-            <Redirect to="/herolo-weather-app" />
           </Switch>
         </div>
       </>
