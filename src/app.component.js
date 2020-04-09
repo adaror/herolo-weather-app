@@ -23,6 +23,7 @@ class App extends React.Component {
           <Switch>
             <Route path="/" exact component={WeatherSearch} />
             <Route path="/favorites" exact component={Favorites} />
+            <Redirect to="/" />
           </Switch>
         </div>
       </>
