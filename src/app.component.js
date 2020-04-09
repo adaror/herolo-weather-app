@@ -4,7 +4,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/scss/main.scss';
 import './app.style.scss';
 import {
-  Switch, Route, withRouter,
+  Switch, Route, withRouter, Redirect
 } from 'react-router-dom';
 import WeatherSearch from './components/weather-search/weather.component';
 import Favorites from './components/favorites/favorites.component';
