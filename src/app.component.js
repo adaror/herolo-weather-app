@@ -21,7 +21,7 @@ class App extends React.Component {
         <ToastContainer autoClose={4000}/>
         <div className="content">
           <Switch>
-            <Route path="/herolo-weather-app" exact component={WeatherSearch} />
+            <Route path="/herolo-weather-app/" exact component={WeatherSearch} />
             <Route path="/favorites" exact component={Favorites} />
           </Switch>
         </div>

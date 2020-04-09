@@ -27,7 +27,7 @@ class Header extends React.Component {
                 >
                     <Tab 
                         label="Search Weather" 
-                        value='/herolo-weather-app'
+                        value='/herolo-weather-app/'
                     />
                     <Tab 
                         label="Favorites" 
