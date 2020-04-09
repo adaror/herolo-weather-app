@@ -1,8 +1,12 @@
 //load component styles
 @import './components/header/header.style.scss';
-@import './components/favorites/favorites.style.scss';
+@import './components/favorites/favorite-card.style.scss';
+@import './components/weather-search/weather-search/weather-search.style.scss';
+@import './components/weather-search/weather-viewer/weather-viewer.style.scss';
+@import './components/weather-search/weather-viewer/weather-card/weather-card.style.scss';
 //load global fonts from google fonts
 @import url('https://fonts.googleapis.com/css?family=Comic+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Inria+Sans&display=swap');
 
 html {
     margin: 0;
@@ -20,6 +24,19 @@ html {
           height: 100vh;
           width: 100%;
           overflow-x: auto;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 375px) and (max-width: 812px) {
+    html {
+      body {
+        #root {
+          .content {
+            padding-top: 20px;
+            padding-left: 0px;
+          }
         }
       }
     }

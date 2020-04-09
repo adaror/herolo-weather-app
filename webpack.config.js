@@ -2,7 +2,6 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
-const isLocal = false;
 module.exports = {
 entry: {
    app: './src/index.js'
@@ -31,7 +30,6 @@ output: {
       {
         test: /\.module\.s(a|c)ss$/,
         loader: [
-          isLocal ? 'style-loader' :
             MiniCssExtractPlugin.loader,
             {
                 loader: 'css-loader',
@@ -52,7 +50,6 @@ output: {
         test: /\.s(a|c)ss$/,
         exclude: /\.module.(s(a|c)ss)$/,
         loader: [
-            isLocal ? 'style-loader' :
             MiniCssExtractPlugin.loader,
             'css-loader',
             {
@@ -75,8 +72,8 @@ output: {
       filename: "./index.html"
     }),
     new MiniCssExtractPlugin({
-        filename: isLocal ? '[name].css' :'[name].[hash].css',
-        chunkFilename: isLocal? '[id].css' : '[id].[hash].css'
+        filename: '[name].[hash].css',
+        chunkFilename: '[id].[hash].css'
     })
   ]
 };

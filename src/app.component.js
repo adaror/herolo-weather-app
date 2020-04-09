@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './components/header/header.component';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/scss/main.scss';
 import './app.style.scss';
 import {
   Switch, Route, withRouter,
@@ -16,6 +18,7 @@ class App extends React.Component {
     return (
       <>
         <Header />
+        <ToastContainer autoClose={4000}/>
         <div className="content">
           <Switch>
             <Route path="/" exact component={WeatherSearch} />

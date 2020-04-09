@@ -1,0 +1,36 @@
+.weather-search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .weather-search-input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .search-input {
+            width: 600px;
+        }
+    }
+    .city-list {
+        width: 694px;
+        position: fixed;
+        background: white;
+        top: 186px;
+        max-height: 396px;
+        overflow-x: scroll;
+    }
+}
+
+@media (min-width: 370px) and (max-width: 815px) {
+    .weather-search-container {
+        .weather-search-input {
+            .search-input {
+                width: 220px;
+            }
+        }
+        .city-list {
+            width: 314px;
+            top: 184px;
+        }
+    }
+}
+

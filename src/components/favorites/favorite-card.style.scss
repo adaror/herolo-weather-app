@@ -1,0 +1,40 @@
+.favorites-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    .favorite-card {
+        width: 300px;
+        .fv-card {
+            text-align: center;
+            .fv-card-content {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .city-name-text {
+                    font-size: 22px;
+                }
+                img {
+                    margin-top: 14px;
+                    align-self: center;
+                     width: 80px;
+                }
+                .city-details-text  {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 370px) and (max-width: 815px) {
+    .favorites-container {
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: center;
+        .favorite-card {
+            margin-top: 20px;
+            width: 300px;
+        }
+    } 
+}

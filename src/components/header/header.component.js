@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Tabs, Tab} from '@material-ui/core';
 import { withRouter } from "react-router-dom";
 
@@ -37,6 +38,10 @@ class Header extends React.Component {
             </div>
         );
     }
+}
+
+Header.propTypes = {
+    history: PropTypes.object
 }
 
 export default withRouter(Header);
